@@ -1,0 +1,321 @@
+/* line 4, ../sass/app.scss */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #b1b1b1 !important;
+}
+
+/* line 7, ../sass/app.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b1b1b1 !important;
+  opacity: 1;
+}
+
+/* line 11, ../sass/app.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b1b1b1 !important;
+  opacity: 1;
+}
+
+/* line 15, ../sass/app.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b1b1b1 !important;
+}
+
+/* line 18, ../sass/app.scss */
+:placeholder-shown {
+  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: #b1b1b1 !important;
+}
+
+/* line 22, ../sass/app.scss */
+input {
+  border-color: 1px solid #ccc;
+}
+
+/* line 26, ../sass/app.scss */
+:required {
+  background: #fff !important;
+  box-shadow: none;
+}
+
+/* line 32, ../sass/app.scss */
+body {
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  padding: 32px;
+  padding-top: 18px;
+  color: #333;
+}
+
+/* line 41, ../sass/app.scss */
+ol {
+  list-style: outside none none;
+  padding: 0;
+}
+
+/* line 48, ../sass/app.scss */
+.container {
+  padding-top: 100px;
+  position: relative;
+}
+
+/* line 55, ../sass/app.scss */
+h1 {
+  text-align: center;
+  color: #111;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+/* line 65, ../sass/app.scss */
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+/* line 71, ../sass/app.scss */
+p {
+  margin: 0px;
+}
+
+/* line 76, ../sass/app.scss */
+p.title {
+  font-weight: Bold;
+  text-decoration: none;
+  color: #111;
+}
+
+/* line 82, ../sass/app.scss */
+p.url {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 89, ../sass/app.scss */
+a.link, a.link:hover {
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* line 95, ../sass/app.scss */
+a.link:hover p.url {
+  text-decoration: underline;
+}
+
+/* line 100, ../sass/app.scss */
+.light {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+/* line 107, ../sass/app.scss */
+.inputs {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media (min-width: 544px) {
+  /* line 107, ../sass/app.scss */
+  .inputs {
+    margin-top: 60px;
+  }
+}
+
+/* line 120, ../sass/app.scss */
+label {
+  font-size: 14px;
+}
+
+/* line 124, ../sass/app.scss */
+.form-control {
+  border-color: #ccc;
+  border-radius: 0px;
+}
+
+/* line 129, ../sass/app.scss */
+.form-control:focus {
+  border-color: #111;
+}
+
+/* line 133, ../sass/app.scss */
+.list-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 138, ../sass/app.scss */
+.list-item p {
+  margin-top: 0rem;
+}
+
+/* line 145, ../sass/app.scss */
+.list-item a.btn {
+  opacity: 1;
+  border-radius: none;
+  -webkit-transition: all 0.3s ease-out;
+  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s ease-out;
+  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+@media (min-width: 992px) {
+  /* line 145, ../sass/app.scss */
+  .list-item a.btn {
+    opacity: 0;
+  }
+}
+
+/* line 156, ../sass/app.scss */
+.list-item:hover a.btn {
+  opacity: 1;
+  border-radius: none;
+  -webkit-transition: all 0.3s ease-out;
+  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s ease-out;
+  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+/* line 163, ../sass/app.scss */
+.delete {
+  text-align: left;
+}
+@media (min-width: 992px) {
+  /* line 163, ../sass/app.scss */
+  .delete {
+    text-align: right;
+  }
+}
+
+/* line 171, ../sass/app.scss */
+.link-col {
+  margin-bottom: 0rem;
+  padding: 0.75em;
+}
+
+/* line 176, ../sass/app.scss */
+.btn {
+  border-radius: 0 !important;
+}
+
+/* line 180, ../sass/app.scss */
+.btn-primary {
+  background: #038d98 none repeat scroll 0 0;
+  border-color: #038d98;
+  color: #fff;
+}
+
+/* line 187, ../sass/app.scss */
+.btn-primary:hover, .btn-primary:active {
+  background: #00737c none repeat scroll 0 0;
+  border-color: #00737c;
+  color: #fff;
+}
+
+/* line 193, ../sass/app.scss */
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+/* line 199, ../sass/app.scss */
+.post {
+  color: #111;
+  text-decoration: none !important;
+  outline: none;
+  border: 1px solid #111;
+  background: transparent;
+}
+
+/* line 207, ../sass/app.scss */
+.post:hover, .post:focus {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  margin-top: 0px;
+  outline: none;
+  text-decoration: none !important;
+}
+
+/* line 215, ../sass/app.scss */
+.post:active:hover {
+  text-decoration: none !important;
+}
+
+/* line 219, ../sass/app.scss */
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+/* line 230, ../sass/app.scss */
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+/* line 235, ../sass/app.scss */
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+/* line 241, ../sass/app.scss */
+.search {
+  border: none;
+  background: #f0f0f0;
+  padding: 10px 0;
+  padding-left: 50px;
+}
+
+/* line 248, ../sass/app.scss */
+#search-field {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #111;
+  font-size: 22px;
+  position: absolute;
+  top: 4px;
+  z-index: 11;
+}
+
+/* line 258, ../sass/app.scss */
+.input-group-addon {
+  background: #fff;
+}
+
+/* line 262, ../sass/app.scss */
+.input-group-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

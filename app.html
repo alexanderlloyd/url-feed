@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="UrlFire">
+<head>
+<title>Mux -Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans|Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+</head>
+<body ng-controller="MainController">
+  <div class="input-group input-group-search">
+    <span class="input-group-addon" id="search-field"><i class="fa fa-search"></i></span>
+    <input type="text" class="form-control search" placeholder="Search articles" data-ng-model="todoSearch">
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Machinas UX Resources</h2>
+        <!-- <h3>Inspirational Articles</h3> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+
+        <form name="myForm" class="row inputs">
+          <div class="col-sm-5">
+            <fieldset class="form-group">
+              <label class="sr-only" for="exampleInputPassword1">Enter a Title/Description</label>
+                <input name="inputName" type="text" id="urlName" class="form-control" placeholder="Enter a Title/Description"  ng-model="mvName" ng-change="formSubmitted = false"  required>
+            </fieldset>
+          </div>
+          <div class="col-sm-5">
+            <fieldset class="form-group">
+                <label class="sr-only" for="exampleInputPassword1">Enter a URL</label>
+                <input type="url" name="inputURL" id="urlLink" class="form-control" placeholder="Enter a URL"  ng-model="mvUrl"   ng-change="formSubmitted = false" required>
+            </fieldset>
+          </div>
+          <div class="col-sm-2">
+              <a href="javascript:" ng-click="saveToList($event) " class="btn btn-block post" ng-show="myForm.$valid && !formSubmitted">Post</a>
+          </div>
+
+        </form>
+        <ol id="favUrls">
+            <label ng-hide="urls.length">
+                    <div class="spinner">
+                      <div class="bounce1"></div>
+                      <div class="bounce2"></div>
+                      <div class="bounce3"></div>
+                    </div>
+          </label>
+        <li ng-repeat="url in urls | filter:todoSearch" class="list-item">
+          <div class="row">
+              <div class="col-md-8 link-col">
+
+                  <a href="{{url.title}}" class="link">
+                      <p class="title">{{url.name}}</p>
+                      <p class="url">{{url.title}}</p>
+                  </a>
+              </div>
+              <!--  <div class="col-md-4 delete m-b-2">
+                  <a href="javascript:" ng-click="edit($index)" type="button" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="javascript:" class="btn btn-danger btn-sm" ng-click="del($index)">Delete</a>
+
+              </div>-->
+        </div>
+        </li>
+        </ol>
+      </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
